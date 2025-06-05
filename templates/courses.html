@@ -67,6 +67,48 @@
       font-size: 18px;
       color: #777;
     }
+
+    /* Filter form styles */
+    .filter-form {
+      background: white;
+      padding: 15px 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      align-items: center;
+      justify-content: center;
+    }
+    .filter-form select {
+      padding: 10px 12px;
+      font-size: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      min-width: 180px;
+    }
+    .filter-form button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 15px;
+      transition: background-color 0.3s ease;
+    }
+    .filter-form button:hover {
+      background-color: #002244;
+    }
+    @media (max-width: 600px) {
+      .filter-form {
+        flex-direction: column;
+      }
+      .filter-form select, .filter-form button {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -81,6 +123,37 @@
   </header>
 
   <div class="container">
+
+    <!-- Filter Form -->
+    <form method="get" action="/courses" class="filter-form">
+  <!-- Course dropdown -->
+  <select name="course_name" id="courseFilter">
+    <option value="">All Courses</option>
+    {% for cname in course_names %}
+      <option value="{{ cname }}" {% if cname == selected_course_name %}selected{% endif %}>{{ cname }}</option>
+    {% endfor %}
+  </select>
+
+  <!-- College dropdown -->
+  <select name="college_name" id="collegeFilter">
+    <option value="">All Colleges</option>
+    {% for colname in colleges %}
+      <option value="{{ colname }}" {% if colname == selected_college_name %}selected{% endif %}>{{ colname }}</option>
+    {% endfor %}
+  </select>
+
+  <!-- Stream dropdown -->
+  <select name="stream" id="streamFilter">
+    <option value="">All Streams</option>
+    {% for s in streams %}
+      <option value="{{ s }}" {% if s == selected_stream %}selected{% endif %}>{{ s }}</option>
+    {% endfor %}
+  </select>
+
+  <button type="submit">Filter</button>
+</form>
+
+
     {% if courses %}
     <table>
       <thead>
@@ -98,7 +171,7 @@
         {% for course in courses %}
         <tr>
           <td>{{ loop.index }}</td>
-     <td><a href="/courses/{{ course.name | lower | replace(' ', '-') }}">{{ course.name }}</a></td>
+          <td><a href="/courses/{{ course.name | lower | replace(' ', '-') }}">{{ course.name }}</a></td>
           <td>{{ course.stream }}</td>
           <td>{{ course.duration }}</td>
           <td>{{ course.seats }}</td>

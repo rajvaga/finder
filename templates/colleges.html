@@ -95,32 +95,33 @@
   </header>
 
   <section class="colleges-section">
-    {% if colleges %}
-      <div class="college-cards">
-        {% for college in colleges %}
-          <div class="college-card">
-            <img 
-              src="{{ college.image_url if college.image_url else '/static/images/default-college.jpg' }}" 
-              alt="{{ college.name }} image" 
-              class="college-image"
-            />
-            <div class="college-info">
-              <h3>{{ college.name }}</h3>
-              {% if live_api %}
-                <p><strong>University:</strong> {{ college.university }}</p>
-                <p><strong>Location:</strong> {{ college.location }}</p>
-                <p><strong>Status:</strong> {{ college.status }}</p>
-              {% else %}
-                <p><strong>Location:</strong> {{ college.location }}</p>
-                <p><strong>Courses Offered:</strong> {{ college.courses | join(", ") }}</p>
-              {% endif %}
-            </div>
+  {% if colleges %}
+    <div class="college-cards">
+      {% for college in colleges %}
+        <a href="/college/{{ college.id }}" class="college-card" style="text-decoration: none; color: inherit;">
+          <img 
+            src="{{ college.image_url if college.image_url else '/static/images/default-college.jpg' }}" 
+            alt="{{ college.name }} image" 
+            class="college-image"
+          />
+          <div class="college-info">
+            <h3>{{ college.name }}</h3>
+            {% if live_api %}
+              <p><strong>University:</strong> {{ college.university }}</p>
+              <p><strong>Location:</strong> {{ college.location }}</p>
+              <p><strong>Status:</strong> {{ college.status }}</p>
+            {% else %}
+              <p><strong>Location:</strong> {{ college.location }}</p>
+              <p><strong>Courses Offered:</strong> {{ college.courses | join(", ") }}</p>
+            {% endif %}
           </div>
-        {% endfor %}
-      </div>
-    {% else %}
-      <p>No colleges found.</p>
-    {% endif %}
-  </section>
+        </a>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>No colleges found.</p>
+  {% endif %}
+</section>
+
 </body>
 </html>

@@ -72,6 +72,15 @@
     .signup-container button:hover {
       background-color: #002244;
     }
+.signup-container select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+}
 
     .signup-container .login-link {
       text-align: center;
@@ -112,6 +121,15 @@
 
       <label for="email">Email</label>
       <input type="email" id="email" name="email" required>
+
+      <label for="course">Interested Course</label>
+<select id="course" name="course" required>
+  <option value="" disabled selected>Select a course</option>
+  {% for course in courses %}
+    <option value="{{ course }}">{{ course }}</option>
+  {% endfor %}
+</select>
+
 
       <label for="password">Password</label>
       <input type="password" id="password" name="password" required>

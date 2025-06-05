@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ college.name }} | College Details</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    nav { margin-top: 10px; }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color .3s ease;
+    }
+    nav a:hover, nav a:focus { color: #99ccff; outline: none; }
+.college-image {
+      flex-shrink: 0;
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      object-fit: cover;
+      background: #ddd;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto 60px;
+      padding: 30px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,.08);
+      flex-grow: 1;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #003366;
+      text-align: center;
+    }
+    section p { font-size: 18px; color: #333; margin-bottom: 15px; }
+    ul.course-list { list-style: disc; padding-left: 20px; }
+    ul.course-list li { margin-bottom: 10px; font-size: 17px; }
+    ul.course-list li::marker { color: #0066cc; }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      main { margin: 20px 15px 40px; padding: 20px; }
+      h1 { font-size: 24px; }
+      nav { text-align: center; margin-top: 8px; }
+      nav a { display: inline-block; margin: 0 8px 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>{{ college.name }}</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/courses">Courses</a>
+      <a href="/colleges">Colleges</a>
+      <a href="/compare">Compare</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>{{ college.name }}</h1>
+  <p><strong>Location:</strong> {{ college.location }}</p>
+     <img 
+            src="{{ college.image_url if college.image_url else '/static/images/default-college.jpg' }}" 
+            alt="{{ college.name }} image" 
+            class="college-image"
+          />
+  <h2>Courses Offered</h2>
+  <ul>
+    {% for course in courses %}
+      <li>{{ course.name }} — Duration: {{ course.duration }}, Seats: {{ course.seats }}, Avg Fee: ₹{{ "{:,}".format(course.avg_fee) }}</li>
+    {% endfor %}
+  </ul>
+
+  <a href="/colleges">Back to Colleges List</a>
+    </section>
+  </main>
+
+</body>
+</html>
