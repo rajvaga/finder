@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Colleges List</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .colleges-section {
+      max-width: 960px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    .college-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .college-card {
+      display: flex;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 15px;
+      transition: box-shadow 0.3s ease;
+      align-items: center;
+      gap: 15px;
+    }
+    .college-card:hover {
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }
+
+    .college-image {
+      flex-shrink: 0;
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      object-fit: cover;
+      background: #ddd;
+    }
+
+    .college-info {
+      flex-grow: 1;
+    }
+
+    .college-info h3 {
+      margin: 0 0 8px;
+      color: #003366;
+      font-size: 18px;
+    }
+    .college-info p {
+      margin: 4px 0;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Colleges in India</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/courses">Courses</a>
+      <a href="/colleges">Colleges</a>
+      <a href="/compare">Compare</a>
+    </nav>
+  </header>
+
+  <section class="colleges-section">
+    {% if colleges %}
+      <div class="college-cards">
+        {% for college in colleges %}
+          <div class="college-card">
+            <img 
+              src="{{ college.image_url if college.image_url else '/static/images/default-college.jpg' }}" 
+              alt="{{ college.name }} image" 
+              class="college-image"
+            />
+            <div class="college-info">
+              <h3>{{ college.name }}</h3>
+              {% if live_api %}
+                <p><strong>University:</strong> {{ college.university }}</p>
+                <p><strong>Location:</strong> {{ college.location }}</p>
+                <p><strong>Status:</strong> {{ college.status }}</p>
+              {% else %}
+                <p><strong>Location:</strong> {{ college.location }}</p>
+                <p><strong>Courses Offered:</strong> {{ college.courses | join(", ") }}</p>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>No colleges found.</p>
+    {% endif %}
+  </section>
+</body>
+</html>

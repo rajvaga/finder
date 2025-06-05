@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - College Finder India</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .login-container {
+      max-width: 480px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-container h2 {
+      margin-bottom: 25px;
+      color: #003366;
+      text-align: center;
+    }
+
+    .login-container label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .login-container button {
+      width: 100%;
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-container button:hover {
+      background-color: #002244;
+    }
+
+    .login-container .signup-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .login-container .signup-link a {
+      color: #003366;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .login-container .error {
+      color: red;
+      text-align: center;
+      margin-top: -15px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>College Finder India</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/courses">Courses</a>
+      <a href="/colleges">Colleges</a>
+      <a href="/compare">Compare</a>
+    </nav>
+  </header>
+
+  <div class="login-container">
+    <h2>Login to Your Account</h2>
+    <form action="/login" method="post">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      {% if error %}
+        <p class="error">{{ error }}</p>
+      {% endif %}
+
+      <button type="submit">Login</button>
+    </form>
+    <div class="signup-link">
+      Don't have an account? <a href="/signup">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+</html>

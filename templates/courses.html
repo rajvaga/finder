@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Courses List</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+
+    th {
+      background: #004080;
+      color: white;
+    }
+
+    tr:hover {
+      background: #f0f4ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Courses Offered in Indian Colleges</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/courses">Courses</a>
+      <a href="/colleges">Colleges</a>
+      <a href="/compare">Compare</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>S. No</th>
+          <th>Subject</th>
+          <th>Title</th>
+          <th>Coordinator</th>
+          <th>University</th>
+          <th>Level</th>
+          <th>Credits</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for course in courses %}
+        <tr>
+          <td>{{ course.s_no }}</td>
+          <td>{{ course.subject }}</td>
+          <td>{{ course.title }}</td>
+          <td>{{ course.coordinator }}</td>
+          <td>{{ course.university }}</td>
+          <td>{{ course.level }}</td>
+          <td>{{ course.credits }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard - College Finder India</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .dashboard-container {
+      max-width: 960px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .dashboard-container h2 {
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    .dashboard-container p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .logout-button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #cc0000;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .logout-button:hover {
+      background-color: #a80000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>College Finder India</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/courses">Courses</a>
+      <a href="/colleges">Colleges</a>
+      <a href="/compare">Compare</a>
+    </nav>
+  </header>
+
+  <div class="dashboard-container">
+    <h2>Welcome, {{ username }}!</h2>
+    <p>This is your dashboard. Here you can:</p>
+    <ul>
+      <li>View and manage your saved courses or colleges</li>
+      <li>Update your account information</li>
+      <li>Access personalized recommendations</li>
+    </ul>
+    <a class="logout-button" href="/logout">Logout</a>
+  </div>
+
+</body>
+</html>

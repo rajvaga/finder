@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>{{ course.name }} | Course Details</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        nav a:hover,
+        nav a:focus {
+            color: #99ccff;
+            outline: none;
+        }
+        main {
+            max-width: 800px;
+            background: white;
+            margin: 40px auto 60px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.08);
+            flex-grow: 1;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #003366;
+            text-align: center;
+        }
+        section p {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        ul.college-list li {
+            margin-bottom: 8px;
+            font-size: 17px;
+        }
+        ul.college-list li::marker {
+            color: #0066cc;
+        }
+        /* Responsive */
+        @media (max-width: 600px) {
+            main {
+                margin: 20px 15px 40px;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            nav {
+                text-align: center;
+                margin-top: 8px;
+            }
+            nav a {
+                display: inline-block;
+                margin: 0 8px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>{{ course.name }}</h1>
+        <nav aria-label="Primary navigation">
+            <a href="/">Home</a>
+            <a href="/courses">Courses</a>
+            <a href="/colleges">Colleges</a>
+            <a href="/compare">Compare</a>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="course-info">
+            <p id="course-info"><strong>🎯 Stream:</strong> {{ course.stream }}</p>
+            <p><strong>⏱ Duration:</strong> {{ course.duration }}</p>
+            <p><strong>🏛 Top Colleges Offering This Course:</strong></p>
+            {% if course.colleges %}
+            <ul class="college-list">
+                {% for college in course.colleges %}
+                <li>{{ college }}</li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p>No colleges listed for this course yet.</p>
+            {% endif %}
+        </section>
+    </main>
+</body>
+</html>

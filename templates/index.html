@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>College Finder India</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .search-container {
+      max-width: 960px;
+      margin: 40px auto 20px;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .search-container form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .search-container select,
+    .search-container input[type="text"] {
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .search-container button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .search-container button:hover {
+      background-color: #002244;
+    }
+
+    .courses-section {
+      max-width: 960px;
+      margin: 20px auto;
+    }
+
+    .course-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .course-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .course-card h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #003366;
+    }
+
+    .course-card p {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .info-boxes-container {
+      max-width: 960px;
+      margin: 40px auto 20px;
+      padding: 10px 20px 30px;
+    }
+
+    .info-boxes-container h2 {
+      color: #003366;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .info-boxes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .info-box-item {
+      background: #e6f0ff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .info-box-item:hover {
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }
+
+    .info-box-item h3 {
+      margin-top: 0;
+      color: #003366;
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .info-box-item p {
+      margin: 0;
+      color: #333;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .cta {
+      max-width: 960px;
+      margin: 40px auto;
+      background-color: #cce5ff;
+      padding: 30px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 10px;
+      background: #004080;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .cta a:hover {
+      background: #002d5a;
+    }
+
+    @media (max-width: 600px) {
+      .search-container form {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>College Finder India</h1>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/courses">Courses</a>
+    <a href="/colleges">Colleges</a>
+    <a href="/compare">Compare</a>
+  </nav>
+</header>
+
+<section class="search-container">
+  <form id="searchForm" method="get" action="/">
+    <select id="stream" name="stream">
+      <option value="">All Streams</option>
+      <option value="Science" {% if stream == 'Science' %}selected{% endif %}>Science</option>
+      <option value="Commerce" {% if stream == 'Commerce' %}selected{% endif %}>Commerce</option>
+      <option value="Arts" {% if stream == 'Arts' %}selected{% endif %}>Arts</option>
+    </select>
+
+    <input
+      type="text"
+      id="searchInput"
+      name="q"
+      placeholder="Search course title, subject, or university"
+      value="{{ query }}"
+      autocomplete="off"
+    />
+
+    <button type="submit">Search</button>
+  </form>
+</section>
+
+<section class="courses-section">
+  <h2>Courses Found ({{ courses|length }})</h2>
+  {% if courses %}
+    <div class="course-cards">
+      {% for course in courses %}
+      <div class="course-card">
+        <h3>{{ course.subject }}</h3>
+        <p><strong>Title:</strong> {{ course.title }}</p>
+        <p><strong>Coordinator:</strong> {{ course.coordinator }}</p>
+        <p><strong>University:</strong> {{ course.university }}</p>
+        <p><strong>Level:</strong> {{ course.level }}</p>
+        <p><strong>Credits:</strong> {{ course.credits }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>No courses found.</p>
+  {% endif %}
+</section>
+
+<section class="info-boxes-container">
+  <h2>Empowering Choices in Education</h2>
+  <div class="info-boxes-grid">
+    <div class="info-box-item">
+      <p>Helps you find the best educational paths by comparing courses and colleges across India.</p>
+    </div>
+    <div class="info-box-item">
+      <h3>Browse Courses</h3>
+      <p>Discover a wide range of professional and academic courses.</p>
+    </div>
+    <div class="info-box-item">
+      <h3>Explore Colleges</h3>
+      <p>Find top colleges by location, ratings, and facilities.</p>
+    </div>
+    <div class="info-box-item">
+      <h3>Smart Comparison</h3>
+      <p>Compare up to 3 courses or colleges side-by-side.</p>
+    </div>
+    <div class="info-box-item">
+      <h3>Trusted Data</h3>
+      <p>All information is verified and reliable.</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

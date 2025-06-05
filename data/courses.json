@@ -1,0 +1,2468 @@
+[
+    {
+        "s_no": "3",
+        "subject": "B",
+        "title": "Com/M Com/MBA",
+        "coordinator": "Direct Tax Laws and Subhrangshu Tezpur",
+        "university": "University",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "4",
+        "subject": "Common Paper English Communication",
+        "title": "Dr.Kshema",
+        "coordinator": "Jose EFLU",
+        "university": "Hyderabad",
+        "level": "UG",
+        "credits": "2"
+    },
+    {
+        "s_no": "5",
+        "subject": "BA English Shakespeare to",
+        "title": "Milton:",
+        "coordinator": "A Dr. Jai Singh EFLU",
+        "university": "Hyderabad",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "9",
+        "subject": "BA German Proficiency Course in Dr Nishant K",
+        "title": "Narayanan",
+        "coordinator": "EFLU",
+        "university": "Hyderabad",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "11",
+        "subject": "BA Psychology Applied Fields of",
+        "title": "Dr.",
+        "coordinator": "P. Swathi EFLU",
+        "university": "Hyderabad",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "12",
+        "subject": "BA English Indian Writing in",
+        "title": "Dr.V.Rajunayak",
+        "coordinator": "EFLU",
+        "university": "Hyderabad",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "13",
+        "subject": "BA Psychology Basic Psychological Dr NDS NAGA",
+        "title": "SEEMA",
+        "coordinator": "EFLU",
+        "university": "Hyderabad",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "14",
+        "subject": "Multidisciplinar y ANIMATIONs",
+        "title": "Dr.",
+        "coordinator": "Abhishek Banaras",
+        "university": "Hindu",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "16",
+        "subject": "Multidiscipilinar y Food Microbiology and Dr Tejpal Dhewa",
+        "title": "Central",
+        "coordinator": "University",
+        "university": "of",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "17",
+        "subject": "BA Hindi Hindi Sahitya ka Itihaas",
+        "title": "Prof",
+        "coordinator": "Subhash",
+        "university": "Kurukshetra",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "18",
+        "subject": "MA Public Introduction to Public Prof Ajmer",
+        "title": "Singh",
+        "coordinator": "Chaudhary",
+        "university": "Devi",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "20",
+        "subject": "MA Fine Arts Creative Painting",
+        "title": "Dr.",
+        "coordinator": "Alka Chaddha",
+        "university": "Dayalbagh",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "22",
+        "subject": "MSc Biostatistics and",
+        "title": "Prof.",
+        "coordinator": "Felix Bast Central University",
+        "university": "of",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "24",
+        "subject": "MSc Environmental Solid and Hazardous",
+        "title": "Prof.",
+        "coordinator": "Vinod Central University",
+        "university": "of",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "25",
+        "subject": "Common Paper Research Methodology",
+        "title": "Prof.",
+        "coordinator": "G.S.Bajpai National",
+        "university": "Law",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "28",
+        "subject": "BA Political",
+        "title": "Human,",
+        "coordinator": "Rights Law and Dr. N. Pramod Manipur",
+        "university": "University",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "31",
+        "subject": "BA Physical Sports Administration and",
+        "title": "Dr.",
+        "coordinator": "M. Chourjit Manipur",
+        "university": "University",
+        "level": "UG",
+        "credits": "3"
+    },
+    {
+        "s_no": "35",
+        "subject": "BA",
+        "title": "(Honors)",
+        "coordinator": "Psychology Statistical Methods for Dr. Jitendra Manipur",
+        "university": "University",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "36",
+        "subject": "BA",
+        "title": "(Honors) Psychology Youth,",
+        "coordinator": "Gender and Dr. Naziya Hasan Manipur",
+        "university": "University",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "37",
+        "subject": "BA",
+        "title": "(Honors) History History of India-I(",
+        "coordinator": "Ancient Dr. Bhabananda Manipur",
+        "university": "University",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "38",
+        "subject": "BA",
+        "title": "(Honors)",
+        "coordinator": "History Social Formations and Dr. Shilleima Manipur",
+        "university": "University",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "39",
+        "subject": "BA",
+        "title": "(Honors)",
+        "coordinator": "Political United Nations and Dr. Arambam Manipur",
+        "university": "University",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "40",
+        "subject": "Management Retail and Channel",
+        "title": "Dr.",
+        "coordinator": "Yamini Devi",
+        "university": "Ahilya",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "41",
+        "subject": "Generic Elective Basics of Photography",
+        "title": "Dr.",
+        "coordinator": "Narayan Devi",
+        "university": "Ahilya",
+        "level": "UG",
+        "credits": "3"
+    },
+    {
+        "s_no": "42",
+        "subject": "Cyber Information Security and",
+        "title": "Prof.",
+        "coordinator": "Pratosh Devi",
+        "university": "Ahilya",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "45",
+        "subject": "Common Paper Environmental Studies",
+        "title": "Dr.",
+        "coordinator": "Monica Jain Devi",
+        "university": "Ahilya",
+        "level": "UG",
+        "credits": "2"
+    },
+    {
+        "s_no": "47",
+        "subject": "BA",
+        "title": "(Honors)",
+        "coordinator": "Political Understanding Political Dr. Ashwini Devi",
+        "university": "Ahilya",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "49",
+        "subject": "BA Arts Talon ka Soundarya",
+        "title": "Dr.",
+        "coordinator": "Rahul Dr.",
+        "university": "Harisingh",
+        "level": "UG",
+        "credits": "3"
+    },
+    {
+        "s_no": "51",
+        "subject": "BA Hindi Bhasha Proudyogiki ka",
+        "title": "Dr.",
+        "coordinator": "C. Jaya Sankar",
+        "university": "Pondicherry",
+        "level": "PG",
+        "credits": "5"
+    },
+    {
+        "s_no": "53",
+        "subject": "BA",
+        "title": "(Honors) Sociology Sociology of India - 1",
+        "coordinator": "Dr.B.Geetha",
+        "university": "M.K.University",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "54",
+        "subject": "BA English Nature of language",
+        "title": "Dr.",
+        "coordinator": "Shiva Durga",
+        "university": "M.K.University",
+        "level": "UG",
+        "credits": "2"
+    },
+    {
+        "s_no": "61",
+        "subject": "BA Geography Agricultural Geography Dr V",
+        "title": "Krishna",
+        "coordinator": "University",
+        "university": "of",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "64",
+        "subject": "BA",
+        "title": "(Honors)",
+        "coordinator": "Economics Environmental Prof Ravindra University",
+        "university": "of",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "65",
+        "subject": "BA Geography Geography of India",
+        "title": "Prof.",
+        "coordinator": "A. Balasubramanian University",
+        "university": "of",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "66",
+        "subject": "BA Tourism Hospitality Industry in",
+        "title": "Prof.",
+        "coordinator": "H. Rajashekar University",
+        "university": "of",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "68",
+        "subject": "BA",
+        "title": "(Honors)",
+        "coordinator": "Economics Introductory Dr Reshma University",
+        "university": "of",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "69",
+        "subject": "BA Geography Physical Geography",
+        "title": "-",
+        "coordinator": "Dr. Arun Das University",
+        "university": "of",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "73",
+        "subject": "BSc Zoology Wild Life and its Dr S",
+        "title": "Basavarajappa",
+        "coordinator": "University",
+        "university": "of",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "75",
+        "subject": "BBA",
+        "title": "/",
+        "coordinator": "BCom Fundamentals of Dr. Girija Shankar Savitribai",
+        "university": "Phule",
+        "level": "UG",
+        "credits": "2"
+    },
+    {
+        "s_no": "76",
+        "subject": "BBA",
+        "title": "/",
+        "coordinator": "BCom Fundamentals of Dr. Rupali Sheth Savitribai",
+        "university": "Phule",
+        "level": "UG",
+        "credits": "3"
+    },
+    {
+        "s_no": "77",
+        "subject": "BBA",
+        "title": "/",
+        "coordinator": "BCom Management Dr. A. Abhilasha Savitribai",
+        "university": "Phule",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "78",
+        "subject": "BA",
+        "title": "(Honours)",
+        "coordinator": "Introduction to Dr. Megha Deuskar Savitribai",
+        "university": "Phule",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "79",
+        "subject": "BA",
+        "title": "(Honours)",
+        "coordinator": "Introductory Dr. Manasi Savitribai",
+        "university": "Phule",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "81",
+        "subject": "MA Education Communication",
+        "title": "Dr.",
+        "coordinator": "Dhaneswar University",
+        "university": "of",
+        "level": "PG",
+        "credits": "5"
+    },
+    {
+        "s_no": "84",
+        "subject": "BA",
+        "title": "(Honours)",
+        "coordinator": "History Social Formations and Dr Abdul Rashid University",
+        "university": "of",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "85",
+        "subject": "BA",
+        "title": "(Honours) History History of India-II",
+        "coordinator": "Dr. Younus Rashid University",
+        "university": "of",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "91",
+        "subject": "BA",
+        "title": "(Honours)",
+        "coordinator": "History Environmental Issues Dr. Javid A Parray University",
+        "university": "of",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "106",
+        "subject": "LLB Law and Justice in a",
+        "title": "Prof.",
+        "coordinator": "Srikrishna National",
+        "university": "Law",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "109",
+        "subject": "BSc Zoology Applied and Economic",
+        "title": "Dr.Dalie",
+        "coordinator": "Dominic A University",
+        "university": "of",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "110",
+        "subject": "BSc Zoology Animal Biotechnology",
+        "title": "Dr.Jayasree.S",
+        "coordinator": "University",
+        "university": "of",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "113",
+        "subject": "BSc",
+        "title": "(Honours)",
+        "coordinator": "Information Security Dr. Reshma P K University",
+        "university": "of",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "115",
+        "subject": "Common Paper Communicative English",
+        "title": "Dr.Salia",
+        "coordinator": "Rex University",
+        "university": "of",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "116",
+        "subject": "BSc",
+        "title": "(Honours)",
+        "coordinator": "Differential Equations Mr. Mohamed University",
+        "university": "of",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "117",
+        "subject": "BSc",
+        "title": "(Honours)",
+        "coordinator": "Calculus Dr. Mansoor P University",
+        "university": "of",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "118",
+        "subject": "BA",
+        "title": "(Honours)",
+        "coordinator": "ECONOMIC HISTORY OF Dr. Linda George University",
+        "university": "of",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "119",
+        "subject": "B",
+        "title": "Com/M Com/MBA",
+        "coordinator": "Entrepreneurship Nilam Panchal Gujarat",
+        "university": "University",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "120",
+        "subject": "MLISc Digital Library",
+        "title": "Dr.",
+        "coordinator": "Jagdish Arora Central University",
+        "university": "of",
+        "level": "PG",
+        "credits": "5"
+    },
+    {
+        "s_no": "122",
+        "subject": "B",
+        "title": "Com/M Com/MBA",
+        "coordinator": "Management Dr. Deepak Raste Gujarat",
+        "university": "University",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "123",
+        "subject": "LLM Access to Justice",
+        "title": "Dr.",
+        "coordinator": "Bharti Yadav National",
+        "university": "Law",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "124",
+        "subject": "LLM Advanced",
+        "title": "Prof. (Dr.)",
+        "coordinator": "Anupama Goel National",
+        "university": "Law",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "127",
+        "subject": "LLM Criminal Justice",
+        "title": "Dr.",
+        "coordinator": "Neeraj Tiwari National",
+        "university": "Law",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "128",
+        "subject": "LLM Environmental Law",
+        "title": "Dr.",
+        "coordinator": "Bharti National",
+        "university": "Law",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "129",
+        "subject": "MA Hindi Hindi Bhasha ka",
+        "title": "Dr.",
+        "coordinator": "Ganga Sahay Jawaharlal",
+        "university": "Nehru",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "130",
+        "subject": "MA Hindi Hindi Gadya Sahitya Professor",
+        "title": "Deo",
+        "coordinator": "Jawaharlal",
+        "university": "Nehru",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "131",
+        "subject": "MA Hindi Indian Culture & History",
+        "title": "Prof.",
+        "coordinator": "Shiv Shankar Shri Lal",
+        "university": "Bahadur",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "133",
+        "subject": "Multidisciplinar y Society and Media",
+        "title": "Dr.",
+        "coordinator": "Durgesh Guru Gobind",
+        "university": "Singh",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "134",
+        "subject": "Multidisciplinar y Media Content",
+        "title": "Dr.",
+        "coordinator": "Krishna Jamia",
+        "university": "Millia",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "135",
+        "subject": "LLM Intellectual Property Dr Yogesh",
+        "title": "Pai",
+        "coordinator": "National",
+        "university": "Law",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "136",
+        "subject": "MA Sanskrit Indian Vastushastra",
+        "title": "Dr.",
+        "coordinator": "Pravesh Vyas Sri Lal",
+        "university": "Bahadur",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "138",
+        "subject": "Multidisciplinar y Introduction to Film Juhee",
+        "title": "Prasad",
+        "coordinator": "Doon",
+        "university": "University",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "140",
+        "subject": "Multidisciplinar y Academic Writing Dr Ajay",
+        "title": "Semalty",
+        "coordinator": "H.N.B.",
+        "university": "Garhwal",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "141",
+        "subject": "MA Hindi",
+        "title": "ि◌हȽ◌ी भाषा एव सŮषण",
+        "coordinator": "Dr. Kshama MJP",
+        "university": "Rohilkhaqnd",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "142",
+        "subject": "BA",
+        "title": "(Honours)",
+        "coordinator": "Public Public Policy and Dr. A. Sridhar Raj Osmania",
+        "university": "University",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "143",
+        "subject": "BA",
+        "title": "(Honours)",
+        "coordinator": "Public Administrative Theory Dr.Lakshman Osmania",
+        "university": "University",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "144",
+        "subject": "Earth Sciences Water Resources and",
+        "title": "Dr.",
+        "coordinator": "Harish Gupta Osmania",
+        "university": "University",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "145",
+        "subject": "BA",
+        "title": "(Honours)",
+        "coordinator": "Sociology Rethinking Prof. Satyapriya Univeristy",
+        "university": "of",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "146",
+        "subject": "BA",
+        "title": "(Honours)",
+        "coordinator": "Public Introduction to Public Prof.Y Pardha Osmania",
+        "university": "University",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "150",
+        "subject": "Commerce Statistics for Business",
+        "title": "Prof.",
+        "coordinator": "Karunesh J N",
+        "university": "Vyas",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "151",
+        "subject": "Geology Earth System Science M S",
+        "title": "Sisodia",
+        "coordinator": "JNV",
+        "university": "University",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "152",
+        "subject": "Commerce CORPORATE",
+        "title": "AMITA",
+        "coordinator": "BISSA",
+        "university": "JNVU",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "153",
+        "subject": "Biopsychology Biopsychology",
+        "title": "Dr.",
+        "coordinator": "Hemlata Joshi",
+        "university": "JNVU",
+        "level": "UG",
+        "credits": "5"
+    },
+    {
+        "s_no": "154",
+        "subject": "Commerce Business",
+        "title": "Dr.",
+        "coordinator": "Meeta Nihalani JNVU",
+        "university": "Jodhpur",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "1",
+        "subject": "Multidisciplinary",
+        "title": "TS-1:",
+        "coordinator": "Foundation Course In Dr. Sonia Sharma and Dr.",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "8"
+    },
+    {
+        "s_no": "2",
+        "subject": "Multidisciplinary",
+        "title": "TS-2:",
+        "coordinator": "Tourism Development Dr. Arvind Kumar Dubey",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "8"
+    },
+    {
+        "s_no": "3",
+        "subject": "Multidisciplinary",
+        "title": "TS-3:",
+        "coordinator": "Management in Tourism Dr. Sonia Sharma",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "8"
+    },
+    {
+        "s_no": "4",
+        "subject": "Multidisciplinary",
+        "title": "TS-6:",
+        "coordinator": "Tourism Marketing Dr. Tangjakhombi",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "8"
+    },
+    {
+        "s_no": "6",
+        "subject": "Language",
+        "title": "MHD-02: आधुिनक िह(cid:25)ी",
+        "coordinator": "Dr. Narendra Mishra",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "8"
+    },
+    {
+        "s_no": "7",
+        "subject": "Language",
+        "title": "MHD-03: उप(cid:29)ास एवं कहानी",
+        "coordinator": "Prof. Jitendra Kr.",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "8"
+    },
+    {
+        "s_no": "10",
+        "subject": "Humanities and Social",
+        "title": "BGP-001:",
+        "coordinator": "Introduction to Dr. Bishnu Mohan Dash",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "11",
+        "subject": "Humanities and Social",
+        "title": "BGP-002:",
+        "coordinator": "Indian Perspectives Dr. Soniya",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "12",
+        "subject": "Humanities and Social",
+        "title": "BGP-003: Conflicts and Peace:",
+        "coordinator": "Dr. Madan Kumar Yadav",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "13",
+        "subject": "Humanities and Social",
+        "title": "MGP-001 Gandhi:",
+        "coordinator": "The Man Dr. Ananda",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "14",
+        "subject": "Humanities and Social",
+        "title": "MGP-002",
+        "coordinator": "Philosophy of Dr. Bishnu Mohan Dash",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "15",
+        "subject": "Humanities and Social",
+        "title": "MGP-003 Gandhi’s",
+        "coordinator": "Social Dr. Rukshana Zaman",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "16",
+        "subject": "Humanities and Social",
+        "title": "MGP-004 Gandhi’s",
+        "coordinator": "Political Prof. Anurag Joshi",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "17",
+        "subject": "Humanities and Social",
+        "title": "MGP-005",
+        "coordinator": "Introduction to Peace Dr. Zuchamo Yanthan",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "18",
+        "subject": "Humanities and Social",
+        "title": "MGPE-006: Gandhi's",
+        "coordinator": "Dr. G Uma",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "19",
+        "subject": "Humanities and Social",
+        "title": "MGPE-007 Non-Violence",
+        "coordinator": "Dr. Ram Chandra",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "20",
+        "subject": "Humanities and Social",
+        "title": "MGPE-008",
+        "coordinator": "Gandhian Dr. Monika Misra",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "21",
+        "subject": "Humanities and Social",
+        "title": "MGPE-009: Gandhi in the 21st",
+        "coordinator": "Dr. Vibhuty Gaur",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "22",
+        "subject": "Humanities and Social",
+        "title": "MGPE-014: Gandhi:",
+        "coordinator": "Ecology Dr. Shubhangi Vaidya",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "24",
+        "subject": "Library and Information",
+        "title": "BLII-012:",
+        "coordinator": "Document Porf. Jaideep Sharma",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "27",
+        "subject": "Library and Information",
+        "title": "BLI-221:",
+        "coordinator": "Library Infromation Porf. Jaideep Sharma",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "28",
+        "subject": "Library and Information",
+        "title": "BLI-222:",
+        "coordinator": "Information Sources Prof. Archana Shukla",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "29",
+        "subject": "Library and Information",
+        "title": "BLI-223:",
+        "coordinator": "Organising and Porf. Jaideep Sharma",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "31",
+        "subject": "Humanities and Social",
+        "title": "BSW-42:",
+        "coordinator": "Tribal Society Dr. Saumya and Dr.",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "35",
+        "subject": "Agricultural and Food MNR",
+        "title": "002:Agricultural Policy:",
+        "coordinator": "Dr. Praveen Kumar Jain",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "36",
+        "subject": "Agricultural and Food MNRE",
+        "title": "015:",
+        "coordinator": "Cooperatives and Dr. Praveen Kumar Jain",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "37",
+        "subject": "Agricultural and Food MNRE",
+        "title": "016:Project",
+        "coordinator": "Analysis Dr. Praveen Kumar Jain",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "38",
+        "subject": "Multidisciplinary",
+        "title": "BHC-013:",
+        "coordinator": "Event Coordination Dr. Meenu Verma",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "44",
+        "subject": "Multidisciplinary",
+        "title": "MSD-011:",
+        "coordinator": "Sustainability Dr. Y.S.C. Khuman",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "45",
+        "subject": "Multidisciplinary",
+        "title": "MSD-016:",
+        "coordinator": "Strategies and Dr. Y.S.C. Khuman and",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "46",
+        "subject": "Multidisciplinary",
+        "title": "MSD-017:",
+        "coordinator": "Challenges to Dr. Deeksha Dave and",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "48",
+        "subject": "Metallurgy and Material Material Science",
+        "title": "Dr.",
+        "coordinator": "Shashank Shrivastava",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "3"
+    },
+    {
+        "s_no": "49",
+        "subject": "Multidisciplinary",
+        "title": "MJM-024: Media,",
+        "coordinator": "Information Prof. K. S. Arul Selvan",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "50",
+        "subject": "Multidisciplinary",
+        "title": "MJM028:",
+        "coordinator": "Digital Media Prof. K. S. Arul Selvan",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "51",
+        "subject": "Multidisciplinary",
+        "title": "MJM029:",
+        "coordinator": "Advertising and Ms. Padmini Jain",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "52",
+        "subject": "Management Studies",
+        "title": "MS-21:",
+        "coordinator": "Social Processes and Dr. Nayantara Padhi",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "6"
+    },
+    {
+        "s_no": "53",
+        "subject": "Teacher Education",
+        "title": "MDE-518:",
+        "coordinator": "Educational Dr. G. Mythili",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "8"
+    },
+    {
+        "s_no": "54",
+        "subject": "Mechanical Engineering",
+        "title": "BME-025:",
+        "coordinator": "Condition Prof. N. Venkateshwarlu",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "2"
+    },
+    {
+        "s_no": "55",
+        "subject": "Humanities and Social",
+        "title": "MPSE-001:",
+        "coordinator": "India and World Prof. Satish Kumar",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "56",
+        "subject": "Humanities and Social",
+        "title": "MPSE-001: भारत और िव0",
+        "coordinator": "Prof. Satish Kumar",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "58",
+        "subject": "Humanities and Social",
+        "title": "MHD-01: आिदकालीन एवं",
+        "coordinator": "Dr. Rita Sinha",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "59",
+        "subject": "Humanities and Social",
+        "title": "MHD-05: सािह) िस(cid:21)ा: और",
+        "coordinator": "Dr. Rita Sinha",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "8"
+    },
+    {
+        "s_no": "61",
+        "subject": "Humanities and Social",
+        "title": "MGPE-010:",
+        "coordinator": "Conflict Dr. Balkar Singh",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "62",
+        "subject": "Humanities and Social",
+        "title": "MGPE-011:",
+        "coordinator": "Human Security Dr. Chitresh Soni",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "63",
+        "subject": "Multidisciplinary",
+        "title": "TS-4: Indian Culture:",
+        "coordinator": "Dr. Arvind Kumar Dubey",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "8"
+    },
+    {
+        "s_no": "64",
+        "subject": "Multidisciplinary",
+        "title": "TS-5: Ecology,",
+        "coordinator": "Environment Dr. Paramita Suklabaidya",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "8"
+    },
+    {
+        "s_no": "65",
+        "subject": "Library and Information",
+        "title": "BLIE-226",
+        "coordinator": "Management of Prof. Archana Shukla",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "66",
+        "subject": "Library and Information",
+        "title": "BLIE-227",
+        "coordinator": "Document Prof. Uma Kanjilal",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "67",
+        "subject": "Library and Information",
+        "title": "BLIE-228",
+        "coordinator": "Information Prof. Archana Shukla and",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "68",
+        "subject": "Library and Information",
+        "title": "BLIE-229",
+        "coordinator": "ICT in Libraries Prof. Uma Kanjilal",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "71",
+        "subject": "Multidisciplinary Introduction to Climate Change",
+        "title": "Dr.",
+        "coordinator": "V. Venkat Raman",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "72",
+        "subject": "Multidisciplinary Communication and Extension",
+        "title": "Prof.",
+        "coordinator": "Heena K. Bijli",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "76",
+        "subject": "Humanities and Social",
+        "title": "MSO-003:",
+        "coordinator": "Sociology of Dr. Deepak Paliwal",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "8"
+    },
+    {
+        "s_no": "77",
+        "subject": "Humanities and Social",
+        "title": "MSO-004:",
+        "coordinator": "Sociology in India Dr. Deepak Paliwal",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "8"
+    },
+    {
+        "s_no": "82",
+        "subject": "Humanities and Social",
+        "title": "MGPE-012",
+        "coordinator": "Women and Peace Dr. Sunita Dhal",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "83",
+        "subject": "Humanities and Social",
+        "title": "MGPE-013 Civil Society,",
+        "coordinator": "Mr. Buta Singh",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "84",
+        "subject": "Humanities and Social",
+        "title": "MGPE-015",
+        "coordinator": "Introduction to Dr Sadananda Sahoo",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "85",
+        "subject": "Humanities and Social",
+        "title": "MGPE-016 Human Rights:",
+        "coordinator": "Dr. Tata Ramakrishna",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "86",
+        "subject": "Multidisciplinary",
+        "title": "TS-7:",
+        "coordinator": "Human Resource Dr. Jatashankar Tewari",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "8"
+    },
+    {
+        "s_no": "87",
+        "subject": "Education",
+        "title": "MDE-412:",
+        "coordinator": "Instructional Design Dr. Anita Priyadarshini",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "6"
+    },
+    {
+        "s_no": "95",
+        "subject": "Continuing Education Satat Vikas ke Liye",
+        "title": "Dr.",
+        "coordinator": "Suman Singh",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "96",
+        "subject": "Teacher Education",
+        "title": "BES-143:",
+        "coordinator": "Pedagogy of Dr. Anjuli Suhane",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "102",
+        "subject": "Language Sindhi Bhasha Shikshan",
+        "title": "Prof.",
+        "coordinator": "Rajendra Prasad",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "2"
+    },
+    {
+        "s_no": "103",
+        "subject": "Multidisciplinary MSD",
+        "title": "019:",
+        "coordinator": "Global Strategies to Dr. Y. S. C. Khuman",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "104",
+        "subject": "Journalism Media and Information",
+        "title": "Prof.",
+        "coordinator": "K. S. Arul Selvan",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "106",
+        "subject": "Multidisciplinary",
+        "title": "MJM024: Media,",
+        "coordinator": "Information Prof. K S Arul Selvan",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "107",
+        "subject": "Multidisciplinary",
+        "title": "MJM024: Media, Information Dr. Ramesh Yadav &",
+        "coordinator": "Dr.",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "122",
+        "subject": "Computer Science and",
+        "title": "CIT-001:",
+        "coordinator": "Fundamentals of Dr. Mangala Prasad",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "123",
+        "subject": "Computer Science and",
+        "title": "CIT-002:",
+        "coordinator": "Introduction to Shri. Akshay Kumar",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "124",
+        "subject": "Computer Science and",
+        "title": "CIT-003:",
+        "coordinator": "Web Based Prof. P. Venkata Suresh",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "125",
+        "subject": "Library and Information",
+        "title": "BLI-224:",
+        "coordinator": "ICT Fundamentals Prof. Uma Kanjilal",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "126",
+        "subject": "Library and Information",
+        "title": "BLI-225:",
+        "coordinator": "Communication Prof. Zuchamo Yanthan",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "127",
+        "subject": "Multidisciplinary",
+        "title": "BHC-011:",
+        "coordinator": "Basics of Event Prof. Heena K Bijli",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "128",
+        "subject": "Multidisciplinary",
+        "title": "BHC-012:",
+        "coordinator": "Event Planning Prof. Heena K Bijli",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "131",
+        "subject": "Agricultural and Food Awareness Programme on",
+        "title": "Dr.",
+        "coordinator": "Mukesh Kumar",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "0"
+    },
+    {
+        "s_no": "136",
+        "subject": "Teacher Education BES",
+        "title": "123:",
+        "coordinator": "Teaching and Dr. Anjuli Suhane",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "137",
+        "subject": "Teacher Education BES",
+        "title": "141:",
+        "coordinator": "Pedagogy of Science Dr. Anjuli Suhane",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "139",
+        "subject": "Multidisciplinary",
+        "title": "MSD-012:",
+        "coordinator": "Ecosystem and Dr. Y.S.C. Khuman and",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "140",
+        "subject": "Mechanical Engineering Thermodynamics & its",
+        "title": "Dr.",
+        "coordinator": "Shweta Tripathi",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "2"
+    },
+    {
+        "s_no": "144",
+        "subject": "Mechanical Engineering Quality Engineering &",
+        "title": "Prof.",
+        "coordinator": "N.Venkateshwarlu",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "145",
+        "subject": "Civil Engineering Pollutants and Water Supply",
+        "title": "Dr.",
+        "coordinator": "Anuj Kumar Purwar",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "148",
+        "subject": "Commerce",
+        "title": "BCOC-131-",
+        "coordinator": "Financial Dr. N. Rajendra Prasad",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "6"
+    },
+    {
+        "s_no": "149",
+        "subject": "Commerce",
+        "title": "MCO-05-Accounting",
+        "coordinator": "for Dr. N. Rajendra Prasad",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "6"
+    },
+    {
+        "s_no": "151",
+        "subject": "Management Studies MS",
+        "title": "2:",
+        "coordinator": "Management of Human Prof. Nayantara Padhi",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "6"
+    },
+    {
+        "s_no": "154",
+        "subject": "Commerce",
+        "title": "BCOE-141:",
+        "coordinator": "Principles of Dr. Anupriya Pandey",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "6"
+    },
+    {
+        "s_no": "155",
+        "subject": "Commerce",
+        "title": "BCOS-183:",
+        "coordinator": "Computer Prof. Subodh Kesharwani",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "156",
+        "subject": "Commerce",
+        "title": "MCO-03:",
+        "coordinator": "Research Prof. Subodh Kesharwani",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "6"
+    },
+    {
+        "s_no": "165",
+        "subject": "Teacher Education",
+        "title": "BES-127:Assessment",
+        "coordinator": "for Dr. Niradhar Dey",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "169",
+        "subject": "Commerce",
+        "title": "BCOS-184 E-Commerce",
+        "coordinator": "Prof. Subodh Kesharwani",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "171",
+        "subject": "Education",
+        "title": "BESC-132:",
+        "coordinator": "Structure and Dr. Ajay Kumar Singh",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "6"
+    },
+    {
+        "s_no": "172",
+        "subject": "Education",
+        "title": "BES-121:",
+        "coordinator": "Childhood and Dr. Elizabeth Kurruvilla",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "177",
+        "subject": "Commerce",
+        "title": "BCOC-134",
+        "coordinator": "Business Dr. Anupriya Pandey",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "6"
+    },
+    {
+        "s_no": "178",
+        "subject": "Commerce",
+        "title": "BCOC-136",
+        "coordinator": "Income Tax Law Dr. Madhulika P. Sarkar",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "6"
+    },
+    {
+        "s_no": "179",
+        "subject": "Commerce",
+        "title": "BCOLA-138",
+        "coordinator": "Business Dr. Rashmi Bansal",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "6"
+    },
+    {
+        "s_no": "180",
+        "subject": "Language",
+        "title": "BSL-001:",
+        "coordinator": "Basics of Spanish Vikash Kumar Singh",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "8"
+    },
+    {
+        "s_no": "181",
+        "subject": "Multidisciplinary Research Ethics and Plagiarism",
+        "title": "Dr.",
+        "coordinator": "Gaurav Singh Central University",
+        "university": "of",
+        "level": "PG",
+        "credits": "2"
+    },
+    {
+        "s_no": "186",
+        "subject": "Education",
+        "title": "BESC-131: Education:",
+        "coordinator": "Dr. Niradhar Dey",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "6"
+    },
+    {
+        "s_no": "187",
+        "subject": "Multidisciplinary Enhancing Study Skills",
+        "title": "Dr. P. Lakshmi;",
+        "coordinator": "Dr. G.",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "2"
+    },
+    {
+        "s_no": "193",
+        "subject": "Language",
+        "title": "BSKLA-135:",
+        "coordinator": "Sanskrit Bhasha Dr. Soniya",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "6"
+    },
+    {
+        "s_no": "194",
+        "subject": "Psychology",
+        "title": "BPCE-145:",
+        "coordinator": "Counselling Prof. Swati Patra and Dr.",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "6"
+    },
+    {
+        "s_no": "195",
+        "subject": "Psychology Statistics in Psychology",
+        "title": "Dr.",
+        "coordinator": "Ashwini Kumar and",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "196",
+        "subject": "Commerce",
+        "title": "BCOC-133:",
+        "coordinator": "Business Law Dr. N. Rajendra Prasad",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "6"
+    },
+    {
+        "s_no": "198",
+        "subject": "Multidisciplinary Introduction to Online Learning",
+        "title": "Dr.",
+        "coordinator": "Ashish Kumar",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "0"
+    },
+    {
+        "s_no": "201",
+        "subject": "Management Studies",
+        "title": "BCOE-144",
+        "coordinator": "Office Management Prof. Subodh Kesharwani",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "6"
+    },
+    {
+        "s_no": "202",
+        "subject": "Teacher Education",
+        "title": "BES-122:",
+        "coordinator": "Contemporary India Dr. Niradhar Dey and Dr.",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "203",
+        "subject": "Certificate Introduction to Virtual Reality Dr R C Sharma Dr",
+        "title": "B",
+        "coordinator": "R",
+        "university": "Ambedkar",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "216",
+        "subject": "Language",
+        "title": "MEG-03:",
+        "coordinator": "British Novel Dr. Malathy A",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "8"
+    },
+    {
+        "s_no": "217",
+        "subject": "Language",
+        "title": "MEG-05: Literary Criticism &",
+        "coordinator": "Dr. Rajesh Kumar",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "8"
+    },
+    {
+        "s_no": "218",
+        "subject": "Language",
+        "title": "MEG-10:",
+        "coordinator": "English Studies in Prof Parmod Kumar",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "8"
+    },
+    {
+        "s_no": "219",
+        "subject": "Language",
+        "title": "MEG-06:",
+        "coordinator": "American Literature Dr. Mridula Rashmi",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "8"
+    },
+    {
+        "s_no": "220",
+        "subject": "Language",
+        "title": "MEG-13:",
+        "coordinator": "Writings from the Dr. Mridula Rashmi",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "222",
+        "subject": "Multidisciplinary Digital Media Literacy",
+        "title": "Prof.",
+        "coordinator": "K. S. Arulselvan",
+        "university": "IGNOU",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "223",
+        "subject": "Education",
+        "title": "BESE-141-",
+        "coordinator": "ICT in Education Dr. Ajith Kumar C",
+        "university": "IGNOU",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "1",
+        "subject": "Management Strategy Platform Business Models",
+        "title": "Srinivasan",
+        "coordinator": "R",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "2",
+        "subject": "Management Strategy Advanced Corporate Strategy",
+        "title": "Srinivasan",
+        "coordinator": "R",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "3",
+        "subject": "Management ESS Arts and",
+        "title": "Culture:",
+        "coordinator": "Towards a New A Damodaran",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "4",
+        "subject": "Management Finance Banking and Financial",
+        "title": "Markets:",
+        "coordinator": "P C Narayan",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "5",
+        "subject": "Management Markeitng Customer Relationship",
+        "title": "Shainesh",
+        "coordinator": "G",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "6",
+        "subject": "Management Markeitng Economic foundations of Pricing",
+        "title": "Sreelata",
+        "coordinator": "Jonnalagedda",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "7",
+        "subject": "Management Communication Effective Business Bringi",
+        "title": "Dev;",
+        "coordinator": "and Rakesh",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "8",
+        "subject": "Management Finance Financial Accounting and",
+        "title": "Padmini",
+        "coordinator": "Srinivasan",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "9",
+        "subject": "Management Finance Introduction to Banking and P",
+        "title": "C",
+        "coordinator": "Narayan",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "10",
+        "subject": "Management Economics Introduction to Managerial",
+        "title": "Subhashish",
+        "coordinator": "Gupta",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "11",
+        "subject": "Management Strategy Managing Innovation Rishikesha",
+        "title": "Krishnan;",
+        "coordinator": "and",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "12",
+        "subject": "Management Marketing New Product Development",
+        "title": "Ganesh",
+        "coordinator": "Prabhu",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "13",
+        "subject": "Management Operations Operation Management",
+        "title": "B",
+        "coordinator": "Mahadevan",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "14",
+        "subject": "Management Decision Science Predictive Analytics",
+        "title": "Dinesh",
+        "coordinator": "Kumar",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "15",
+        "subject": "Management marketing Quantitative Marketing Research",
+        "title": "Prithwiraj",
+        "coordinator": "Mukherji",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "16",
+        "subject": "Management Marketing Services",
+        "title": "Marketing: Concepts &",
+        "coordinator": "Shainesh G",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "18",
+        "subject": "Management Finance Valuation and Creating",
+        "title": "Padmini",
+        "coordinator": "Srinivasan",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "19",
+        "subject": "Management Marketing Brand Management Preeti",
+        "title": "Krishnan",
+        "coordinator": "Lyndem",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "23",
+        "subject": "Management Entrepreneurship People Management for",
+        "title": "Vasanthi",
+        "coordinator": "Srinivasan",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "24",
+        "subject": "Management Finance Foreign Exchange market P",
+        "title": "C",
+        "coordinator": "Narayan",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "25",
+        "subject": "Management Marketing Organizational Design",
+        "title": "Sourav",
+        "coordinator": "Mukherji",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "26",
+        "subject": "Management Finance Eqiuty Stock Market P",
+        "title": "C",
+        "coordinator": "Narayan",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "27",
+        "subject": "Management Marketing Marketing Management",
+        "title": "Ashis",
+        "coordinator": "Mishra",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "28",
+        "subject": "Management Economics",
+        "title": "Macroeconomics",
+        "coordinator": "Rupa",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "29",
+        "subject": "Management Entrepreneurship Family Business Prof Kumar &",
+        "title": "Prof",
+        "coordinator": "Dalhia",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "0"
+    },
+    {
+        "s_no": "30",
+        "subject": "Management Data Science Foundations of Digital Business Prof Rahul De",
+        "title": "and",
+        "coordinator": "Others",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "31",
+        "subject": "Management Data Science Foundation of Data Science",
+        "title": "Dinesh",
+        "coordinator": "Kumar",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "32",
+        "subject": "Management Marketing Innovation and Start up policy",
+        "title": "Rahul",
+        "coordinator": "Mishra",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "33",
+        "subject": "Management Marketing Business Environment",
+        "title": "Chhavi",
+        "coordinator": "Jain",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "34",
+        "subject": "Management Marketing Consumer Buyer Behaviour",
+        "title": "Ashish",
+        "coordinator": "Hathi",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "35",
+        "subject": "Management Marketing Continuous Quality",
+        "title": "Sanjeev",
+        "coordinator": "Singh",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "36",
+        "subject": "Management Marketing Total Productive Maintenance Anil",
+        "title": "Kumar",
+        "coordinator": "Srivastava",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "37",
+        "subject": "Management Marketing Design Thinking",
+        "title": "Rajeshwari",
+        "coordinator": "Patil",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "0"
+    },
+    {
+        "s_no": "38",
+        "subject": "Management Marketing Foundations of Marketing",
+        "title": "Bharti",
+        "coordinator": "Singh",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "39",
+        "subject": "Management HRM Strategic Human Resource Aditya",
+        "title": "Christopher",
+        "coordinator": "Moses",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "40",
+        "subject": "Management Research Methods and Quantitative and Mixed Methods R N Subuddhi",
+        "title": "&",
+        "coordinator": "Prof",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "41",
+        "subject": "Management IT Digital",
+        "title": "Transformation:",
+        "coordinator": "Theory Pankaj Setia",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "42",
+        "subject": "Management Communication Health care",
+        "title": "Communication",
+        "coordinator": "Deepthi",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "43",
+        "subject": "Management Statistics Prescriptive",
+        "title": "Analytics",
+        "coordinator": "Rajluxmi",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "44",
+        "subject": "Management Marketing Evalution of Business",
+        "title": "and",
+        "coordinator": "Pratikraj",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "45",
+        "subject": "Management Markeitng Digital",
+        "title": "Marketing",
+        "coordinator": "Shainesh",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "46",
+        "subject": "Management Public Policy",
+        "title": "Infrastructure",
+        "coordinator": "Raghuram",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "47",
+        "subject": "Management Marketing Advanced Product Quality",
+        "title": "Shishir",
+        "coordinator": "Bharadwaj",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "48",
+        "subject": "Management Marketing Production Part Approval",
+        "title": "Shishir",
+        "coordinator": "Bharadwaj",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "49",
+        "subject": "Management OBHR Understanding Organizational",
+        "title": "Sanjay",
+        "coordinator": "Singh",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "50",
+        "subject": "Management OBHR Advanced Topics in",
+        "title": "Sanjay",
+        "coordinator": "Singh",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "51",
+        "subject": "Management Finance Behavioural Finance",
+        "title": "Shikta",
+        "coordinator": "Singh",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "52",
+        "subject": "Management Finance Banking and Insurance",
+        "title": "Ruchi",
+        "coordinator": "Jain",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "53",
+        "subject": "Management Finance",
+        "title": "Money, Banking &",
+        "coordinator": "Financial Dr. Sujata Kar",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "55",
+        "subject": "Management Finance FinTechs in International",
+        "title": "Dr.",
+        "coordinator": "Satinder Bhatia",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "56",
+        "subject": "Management Communication Business Communication",
+        "title": "Preetham",
+        "coordinator": "K",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "57",
+        "subject": "Management Strategy Gamification as a Business Dr",
+        "title": "manish",
+        "coordinator": "Kumar",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "58",
+        "subject": "Management IT Digital Image Processing",
+        "title": "Dr.Nikita",
+        "coordinator": "Joshi Mishra",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "59",
+        "subject": "Management IT Cyber Security",
+        "title": "Archana",
+        "coordinator": "Gupta",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "60",
+        "subject": "Management Entrepreneurship Design Thinking and Innovation",
+        "title": "Komal",
+        "coordinator": "Kapoor",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "61",
+        "subject": "Management Finance Introduction to Blockchain",
+        "title": "Purnima",
+        "coordinator": "Gupta",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "62",
+        "subject": "Management HRM HR Analytics Using Excel",
+        "title": "Dr.",
+        "coordinator": "Subbulakshmi Somu",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "63",
+        "subject": "Management Marketing INDIAN PRIMARY",
+        "title": "MARKET:",
+        "coordinator": "Dr. Shikha Jalota",
+        "university": "IIMB",
+        "level": "PG",
+        "credits": "3"
+    },
+    {
+        "s_no": "1",
+        "subject": "Buddhist Studies History of Indian",
+        "title": "Prof. K.T.S. Sarao,",
+        "coordinator": "Central Institute of Higher UG",
+        "university": "and",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "2",
+        "subject": "Buddhist Studies Abhidhamma",
+        "title": "(Pali) Prof. Bimalendra Kumar,",
+        "coordinator": "Central Institute of Higher UG",
+        "university": "and",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "3",
+        "subject": "Buddhist Studies Buddhist Philosophy",
+        "title": "Prof.",
+        "coordinator": "Pradeep Prabhakar Central Institute of Higher UG",
+        "university": "and",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "4",
+        "subject": "Buddhist Studies Buddhist Tourism",
+        "title": "Dr.",
+        "coordinator": "Shrikant Ganvir Assistant Central Institute of Higher UG",
+        "university": "and",
+        "level": "PG",
+        "credits": "4"
+    },
+    {
+        "s_no": "1",
+        "subject": "Multidisciplinary Yoga for Ego Management Dr Divya B R Swami Vivekananda",
+        "title": "Yoga",
+        "coordinator": "Anusandhana",
+        "university": "Samsthana",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "2",
+        "subject": "Multidisciplinary Yoga for IQ Development Dr Jincy Sundaran Swami Vivekananda",
+        "title": "Yoga",
+        "coordinator": "Anusandhana",
+        "university": "Samsthana",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "3",
+        "subject": "Multidisciplinary Yoga for Eye Sight Improvement Dr Soubhagyalaxmi Swami Vivekananda",
+        "title": "Yoga",
+        "coordinator": "Anusandhana",
+        "university": "Samsthana",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "4",
+        "subject": "Multidisciplinary Yoga for Anger Management Dr Arundhati Goley Swami Vivekananda",
+        "title": "Yoga",
+        "coordinator": "Anusandhana",
+        "university": "Samsthana",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "5",
+        "subject": "Multidisciplinary Yoga for Concentration Dr Apar Saoji Swami Vivekananda",
+        "title": "Yoga",
+        "coordinator": "Anusandhana",
+        "university": "Samsthana",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "6",
+        "subject": "Multidisciplinary Yoga for Memory Development Dr Deepeshwar Swami Vivekananda",
+        "title": "Yoga",
+        "coordinator": "Anusandhana",
+        "university": "Samsthana",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "7",
+        "subject": "Multidisciplinary Yoga for Physical Stamina Dr Vikas Rawat Swami Vivekananda",
+        "title": "Yoga",
+        "coordinator": "Anusandhana",
+        "university": "Samsthana",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "8",
+        "subject": "Multidisciplinary Yoga for Voice Culture Dr Arundhati Goley Swami Vivekananda",
+        "title": "Yoga",
+        "coordinator": "Anusandhana",
+        "university": "Samsthana",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "9",
+        "subject": "Multidisciplinary Yoga for Creativity Dr Ganga K V Swami Vivekananda",
+        "title": "Yoga",
+        "coordinator": "Anusandhana",
+        "university": "Samsthana",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "10",
+        "subject": "Multidisciplinary Yoga for Stress Management Dr Rajesh Nair Swami Vivekananda",
+        "title": "Yoga",
+        "coordinator": "Anusandhana",
+        "university": "Samsthana",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "11",
+        "subject": "Multidisciplinary Yoga Volunteers for Diabetes Dr Vidyashree M Swami Vivekananda",
+        "title": "Yoga",
+        "coordinator": "Anusandhana",
+        "university": "Samsthana",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "12",
+        "subject": "Multidisciplinary Yoga Volunteers for Diabetes Dr Vidyashree M Swami Vivekananda",
+        "title": "Yoga",
+        "coordinator": "Anusandhana",
+        "university": "Samsthana",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "13",
+        "subject": "Multidisciplinary Yoga Volunteers for Hypertension",
+        "title": "/",
+        "coordinator": "Dr Ranjita R Swami Vivekananda Yoga Anusandhana",
+        "university": "Samsthana",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "14",
+        "subject": "Multidisciplinary Yoga Volunteers for Hypertension",
+        "title": "/",
+        "coordinator": "Dr Ranjita R Swami Vivekananda Yoga Anusandhana",
+        "university": "Samsthana",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "15",
+        "subject": "Multidisciplinary Yoga Volunteers for Palliative Care Dr Ritesh C Swami Vivekananda",
+        "title": "Yoga",
+        "coordinator": "Anusandhana",
+        "university": "Samsthana",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "16",
+        "subject": "Multidisciplinary Yoga Volunteers for Palliative Care Dr Ritesh C Swami Vivekananda",
+        "title": "Yoga",
+        "coordinator": "Anusandhana",
+        "university": "Samsthana",
+        "level": "UG",
+        "credits": "4"
+    },
+    {
+        "s_no": "7",
+        "subject": "Teacher Teaching & Learning",
+        "title": "(TL)",
+        "coordinator": "Practices for Python Dr. V. Shanmuganeethi",
+        "university": "NITTTR",
+        "level": "UG",
+        "credits": "3"
+    }
+]

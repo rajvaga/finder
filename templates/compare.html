@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Compare Courses & Colleges</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f6f8;
+            margin: 0; padding: 30px 40px;
+            color: #222;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: #004080;
+            color: white;
+            padding: 20px 40px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        nav a {
+            color: white; margin: 0 15px; font-weight: 600; text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav a:hover, nav a:focus {
+            text-decoration: underline;
+            color: #a8c0ff;
+        }
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+        form {
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+        form p {
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        form > div {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: 700;
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="checkbox"] {
+            margin-right: 8px;
+            transform: scale(1.15);
+            cursor: pointer;
+        }
+        .btn-compare {
+            background: #0073e6;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-compare:hover, .btn-compare:focus {
+            background: #005bb5;
+            outline: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 60px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px 20px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        th {
+            background: #004080;
+            color: white;
+            user-select: none;
+        }
+        tr:hover {
+            background: #eef5ff;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            table, th, td {
+                font-size: 14px;
+            }
+            .btn-compare {
+                width: 100%;
+                padding: 14px 0;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Compare Courses & Colleges</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/courses">Courses</a>
+            <a href="/colleges">Colleges</a>
+            <a href="/compare" aria-current="page">Compare</a>
+        </nav>
+    </header>
+
+    <main>
+        <form id="compareForm" method="post" action="/compare" aria-label="Select courses and colleges to compare">
+            <p>Select courses and colleges to compare (up to 3 each):</p>
+            <div>
+                <label for="compare_courses">Courses:</label>
+                <div id="compare_courses" role="group" aria-labelledby="compare_courses_label">
+                    {% for course in courses %}
+                        <div>
+                            <input type="checkbox" id="course_{{ course.id }}" name="compare_courses" value="{{ course.id }}" aria-describedby="course_{{ course.id }}_desc">
+                            <label for="course_{{ course.id }}">{{ course.name }}</label>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div>
+                <label for="compare_colleges">Colleges:</label>
+                <div id="compare_colleges" role="group" aria-labelledby="compare_colleges_label">
+                    {% for college in colleges %}
+                        <div>
+                            <input type="checkbox" id="college_{{ college.id }}" name="compare_colleges" value="{{ college.id }}" aria-describedby="college_{{ college.id }}_desc">
+                            <label for="college_{{ college.id }}">{{ college.name }}</label>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <button type="submit" class="btn-compare">Compare</button>
+        </form>
+
+        {% if comparison %}
+        <section aria-live="polite" aria-atomic="true">
+            <h2>Comparison Results</h2>
+            <table role="table" aria-label="Comparison of selected courses and colleges">
+                <thead>
+                    <tr>
+                        <th scope="col">Attribute</th>
+                        {% for item in comparison %}
+                        <th scope="col">{{ item.name }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Type</td>
+                        {% for item in comparison %}
+                        <td>{{ item.type }}</td>
+                        {% endfor %}
+                    </tr>
+                    <tr>
+                        <td>Stream</td>
+                        {% for item in comparison %}
+                        <td>{{ item.stream if item.type == 'Course' else '—' }}</td>
+                        {% endfor %}
+                    </tr>
+                    <tr>
+                        <td>Duration</td>
+                        {% for item in comparison %}
+                        <td>{{ item.duration if item.type == 'Course' else '—' }}</td>
+                        {% endfor %}
+                    </tr>
+                    <tr>
+                        <td>Seats</td>
+                        {% for item in comparison %}
+                        <td>{{ item.seats if item.type == 'Course' else '—' }}</td>
+                        {% endfor %}
+                    </tr>
+                    <tr>
+                        <td>Avg. Fee (₹)</td>
+                        {% for item in comparison %}
+                        <td>{{ "{:,}".format(item.avg_fee) if item.type == 'Course' else '—' }}</td>
+                        {% endfor %}
+                    </tr>
+                    <tr>
+                        <td>Location</td>
+                        {% for item in comparison %}
+                        <td>{{ item.location if item.type == 'College' else '—' }}</td>
+                        {% endfor %}
+                    </tr>
+                    <tr>
+                        <td>Established Year</td>
+                        {% for item in comparison %}
+                        <td>{{ item.established_year if item.type == 'College' else '—' }}</td>
+                        {% endfor %}
+                    </tr>
+                    <tr>
+                        <td>Ranking</td>
+                        {% for item in comparison %}
+                        <td>{{ item.ranking if item.type == 'College' else '—' }}</td>
+                        {% endfor %}
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        {% endif %}
+    </main>
+</body>
+</html>
