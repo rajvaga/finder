@@ -10,13 +10,13 @@ from passlib.hash import bcrypt
 from typing import Optional, List
 import os
 import httpx
-import json
 
 app = FastAPI()
 
-# Directories
+# ────────────────────────────────────────
+# Paths & template / static setup
+# ────────────────────────────────────────
 BASE_DIR = os.path.dirname(__file__)
-DATA_PATH = os.path.join(BASE_DIR, "data", "courses.json")
 TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
 STATIC_DIR = os.path.join(BASE_DIR, "static")
 
@@ -30,14 +30,17 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Load courses from JSON file
-def load_courses():
-    with open(DATA_PATH, "r", encoding="utf-8") as f:
-        return json.load(f)
+# ────────────────────────────────────────
+# In-memory data (sample dataset)
+# ────────────────────────────────────────
+courses = [
+    {"id": 1, "name": "B.Tech Computer Science", "stream": "Science", "duration": "4 years", "colleges": ["IIT Delhi", "NIT Trichy"], "seats": 500, "avg_fee": 150000},
+    {"id": 2, "name": "B.Com", "stream": "Commerce", "duration": "3 years", "colleges": ["SRCC", "Loyola"], "seats": 300, "avg_fee": 60000},
+    {"id": 3, "name": "BA English", "stream": "Arts", "duration": "3 years", "colleges": ["Delhi University", "JNU"], "seats": 400, "avg_fee": 50000},
+    {"id": 4, "name": "MBBS", "stream": "Science", "duration": "5.5 years", "colleges": ["AIIMS", "CMC Vellore"], "seats": 200, "avg_fee": 300000},
+    {"id": 5, "name": "BBA", "stream": "Commerce", "duration": "3 years", "colleges": ["NMIMS", "IIM Bangalore"], "seats": 350, "avg_fee": 120000},
+]
 
-courses = load_courses()
-
-# Example hardcoded colleges (you can move this to a JSON as well)
 colleges = [
     {"id": 1, "name": "IIT Delhi", "courses": ["B.Tech Computer Science"], "location": "Delhi"},
     {"id": 2, "name": "NIT Trichy", "courses": ["B.Tech Computer Science"], "location": "Tamil Nadu"},
@@ -51,7 +54,9 @@ colleges = [
     {"id": 10, "name": "IIM Bangalore", "courses": ["BBA"], "location": "Bangalore"},
 ]
 
-# DB Dependency
+# ────────────────────────────────────────
+# Database dependency
+# ────────────────────────────────────────
 def get_db():
     db = SessionLocal()
     try:
@@ -59,33 +64,70 @@ def get_db():
     finally:
         db.close()
 
+# ────────────────────────────────────────
+# Home route ➜ show colleges
+# ────────────────────────────────────────
 @app.get("/", response_class=HTMLResponse)
-def home(request: Request, db: Session = Depends(get_db), q: Optional[str] = None, stream: Optional[str] = None):
+def home(
+    request: Request,
+    db: Session = Depends(get_db),
+    q: Optional[str] = None,
+    college_filter: Optional[str] = None,
+    course_filter: Optional[str] = None,
+    location_filter: Optional[str] = None,
+):
     user_id = request.cookies.get("user_id")
     if not user_id:
-        return templates.TemplateResponse("login.html", {"request": request})
+        return RedirectResponse("/login", status_code=302)
     user = db.query(User).filter(User.id == int(user_id)).first()
     if not user:
-        return templates.TemplateResponse("login.html", {"request": request})
+        return RedirectResponse("/login", status_code=302)
 
-    filtered = courses
-    if stream:
-        filtered = [
-            c for c in filtered
-            if c.get("stream") and c["stream"].lower() == stream.lower()
-        ]
+    # Start with all colleges
+    filtered_colleges = colleges
+
+    # Apply text query filter if present
     if q:
-        q = q.lower()
-        filtered = [
-            c for c in filtered
-            if q in c.get("name", "").lower()
+        q_lower = q.lower()
+        filtered_colleges = [
+            c for c in filtered_colleges if q_lower in c["name"].lower() or q_lower in c["location"].lower()
         ]
-    return templates.TemplateResponse("index.html", {
-        "request": request,
-        "courses": filtered,
-        "query": q or "",
-        "stream": stream or ""
-    })
+
+    # Filter by college name if filter selected
+    if college_filter:
+        filtered_colleges = [c for c in filtered_colleges if c["name"] == college_filter]
+
+    # Filter by location if filter selected
+    if location_filter:
+        filtered_colleges = [c for c in filtered_colleges if c["location"] == location_filter]
+
+    # Filter by course if selected (college should offer that course)
+    if course_filter:
+        filtered_colleges = [c for c in filtered_colleges if course_filter in c["courses"]]
+
+    # Prepare lists for dropdown options - unique and sorted
+    college_names = sorted(set(c["name"] for c in colleges))
+    all_courses = sorted(set(c["name"] for c in courses))  # <-- FIXED THIS LINE
+    locations = sorted(set(c["location"] for c in colleges))
+
+    return templates.TemplateResponse(
+        "index.html",
+        {
+            "request": request,
+            "colleges": filtered_colleges,
+            "query": q or "",
+            "college_names": college_names,
+            "courses": all_courses,
+            "locations": locations,
+            "selected_college": college_filter,
+            "selected_course": course_filter,
+            "selected_location": location_filter,
+        },
+    )
+
+# ────────────────────────────────────────
+# Auth routes
+# ────────────────────────────────────────
 @app.get("/login", response_class=HTMLResponse)
 def login_form(request: Request):
     return templates.TemplateResponse("login.html", {"request": request})
@@ -121,7 +163,7 @@ def dashboard(request: Request, db: Session = Depends(get_db)):
     user = db.query(User).filter(User.id == int(user_id)).first() if user_id else None
     if not user:
         return RedirectResponse("/login", status_code=302)
-    return templates.TemplateResponse("dashboard.html", {"request": request, "username": user.username })
+    return templates.TemplateResponse("dashboard.html", {"request": request, "username": user.username})
 
 @app.get("/logout")
 def logout():
@@ -129,17 +171,15 @@ def logout():
     response.delete_cookie("user_id")
     return response
 
+# ────────────────────────────────────────
+# Course routes
+# ────────────────────────────────────────
 @app.get("/courses", response_class=HTMLResponse)
 def list_courses(request: Request, stream: Optional[str] = None):
     filtered = [c for c in courses if c["stream"].lower() == stream.lower()] if stream else courses
-
-    # Format avg_fee to readable string
     for course in filtered:
-        if "avg_fee" in course and isinstance(course["avg_fee"], (int, float)):
-            course["formatted_fee"] = "{:,}".format(course["avg_fee"])
-        else:
-            course["formatted_fee"] = "N/A"
-
+        fee = course.get("avg_fee")
+        course["formatted_fee"] = "{:,}".format(fee) if isinstance(fee, (int, float)) else "N/A"
     return templates.TemplateResponse("courses.html", {"request": request, "courses": filtered})
 
 @app.get("/courses/{course_slug}", response_class=HTMLResponse)
@@ -149,10 +189,38 @@ def course_detail(request: Request, course_slug: str):
         return JSONResponse(status_code=404, content={"message": "Course not found"})
     return templates.TemplateResponse("course_detail.html", {"request": request, "course": course})
 
+# ────────────────────────────────────────
+# College routes
+# ────────────────────────────────────────
 @app.get("/colleges", response_class=HTMLResponse)
 def list_colleges(request: Request):
     return templates.TemplateResponse("colleges.html", {"request": request, "colleges": colleges})
 
+@app.get("/colleges-live", response_class=HTMLResponse)
+async def colleges_live(request: Request, limit: int = 10):
+    url = (
+        "https://api.data.gov.in/resource/cd09cb48-4e44-489f-96b5-fc7012bf5f8e"
+        "?api-key=579b464db66ec23bdd000001cdd3946e44ce4aad7209ff7b23ac571b"
+        "&format=json&limit=" + str(limit)
+    )
+    async with httpx.AsyncClient() as client:
+        res = await client.get(url)
+        data = res.json()
+    items = data.get("records", [])
+    mapped = [
+        {
+            "name": c.get("college_name", "N/A"),
+            "location": f"{c.get('district_name', '')}, {c.get('state_name', '')}",
+            "university": c.get("university_name", "N/A"),
+            "status": c.get("status", "N/A"),
+        }
+        for c in items
+    ]
+    return templates.TemplateResponse("colleges.html", {"request": request, "colleges": mapped, "live_api": True})
+
+# ────────────────────────────────────────
+# Compare / Suggest API
+# ────────────────────────────────────────
 @app.get("/compare", response_class=HTMLResponse)
 def compare(request: Request, course_ids: Optional[List[int]] = Query([]), college_ids: Optional[List[int]] = Query([])):
     selected_courses = [c for c in courses if c["id"] in course_ids]
@@ -161,27 +229,15 @@ def compare(request: Request, course_ids: Optional[List[int]] = Query([]), colle
 
 @app.get("/api/suggestions")
 def suggestions(q: str):
-    q = q.lower()
+    q_lower = q.lower()
     return JSONResponse({
-        "courses": [c["name"] for c in courses if q in c["name"].lower()][:5],
-        "colleges": [c["name"] for c in colleges if q in c["name"].lower()][:5]
+        "courses": [c["name"] for c in courses if q_lower in c["name"].lower()][:5],
+        "colleges": [c["name"] for c in colleges if q_lower in c["name"].lower()][:5],
     })
 
-@app.get("/colleges-live", response_class=HTMLResponse)
-async def colleges_live(request: Request, limit: int = 10):
-    url = "https://api.data.gov.in/resource/cd09cb48-4e44-489f-96b5-fc7012bf5f8e?api-key=579b464db66ec23bdd000001cdd3946e44ce4aad7209ff7b23ac571b&format=json&limit=" + str(limit)
-    async with httpx.AsyncClient() as client:
-        res = await client.get(url)
-        data = res.json()
-    items = data.get("records", [])
-    mapped = [{
-        "name": c.get("college_name", "N/A"),
-        "location": f"{c.get('district_name', '')}, {c.get('state_name', '')}",
-        "university": c.get("university_name", "N/A"),
-        "status": c.get("status", "N/A")
-    } for c in items]
-    return templates.TemplateResponse("colleges.html", {"request": request, "colleges": mapped, "live_api": True})
-
+# ────────────────────────────────────────
+# Run locally
+# ────────────────────────────────────────
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
